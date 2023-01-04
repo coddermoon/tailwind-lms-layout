@@ -30,6 +30,7 @@
                         shade: "#E7F1FF",
                         shade_deep: "#C4DDFF",
                         text: "#0B2445",
+                        danger: '#FF0055'
                     },
                     fontFamily: {
                         eng: ["Inter", " sans-serif"],
@@ -116,31 +117,28 @@
                
         <div class="cardLayout   my-10 ">
 
-            <h2 class="text-center text-2xl font-bold ">নোটিশ লিখুন</h2>
+            <h2 class="text-center text-2xl font-bold ">বিষয়</h2>
             <form class="notice max-w-[600px] sm:w-[90%] mx-auto my-5 ">
 
-                <label for="বিষয়" class="text-xl pb-5">বিষয়</label> <br>
-                <input class="w-full py-2 my-3 bg-white" type="text">
 
-
-                <label for="বিষয়" class="text-xl pb-5">বিস্তারিত নোটিশ </label> <br>
-                <textarea class="w-full h-[220px] py-2 my-3 bg-white resize-none" name="" id=""></textarea>
+                <textarea class="w-full h-[300px] py-2 mt-3 bg-white resize-none" name="" id=""></textarea>
+                <div class="dates flex justify-between">
+                    <small class="text-lg">শুরু ০০-০০-০০ ০০:০০</small>
+                    <small class="text-lg">শেষ ০০-০০-০০ ০০:০০</small>
+                </div>
 
                 <div class="flex btn-group my-6">
 
                     <!-- save button -->
                     <button
-                        class="bg-primary text-white hover:bg-white border-2 border-primary hover:border-2 hover:border-primary hover:text-primary w-[120px]  pt-2 lg:text-xl font-bangla rounded-full transition mx-auto">
-                        সেভ
+                        class="bg-danger text-white hover:bg-white border-2 border-danger hover:border-2 hover:border-danger hover:text-danger w-[120px]  pt-2 lg:text-xl font-bangla rounded-full transition mx-auto">
+                        বাতিল
                     </button>
                     <button
                         class="bg-primary text-white hover:bg-white border-2 border-primary hover:border-2 hover:border-primary hover:text-primary block w-[120px]  pb-1 pt-2 lg:text-xl font-bangla rounded-full transition mx-auto">
-                        সিডিউল
+                        গ্রহণ
                     </button>
-                    <button
-                        class="bg-primary text-white hover:bg-white border-2 border-primary hover:border-2 hover:border-primary hover:text-primary block w-[120px]  pb-1 pt-2 lg:text-xl font-bangla rounded-full transition mx-auto">
-                        সাবমিট
-                    </button>
+
 
 
 
