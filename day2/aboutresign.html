@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- tailwind css cdn  -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- daisy ui -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@500&display=swap" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <script src="https://kit.fontawesome.com/2cdefe7f54.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.46.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind css configarations -->
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#1479ff",
+                        shade: "#E7F1FF",
+                        shade_deep: "#C4DDFF",
+                        text: "#0B2445",
+                    },
+                    fontFamily: {
+                        eng: ["Inter", " sans-serif"],
+                        bangla: ["Noto Sans Bengali", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+
+    <!-- for custom css -->
+
+
+
+    <!-- title -->
+    <title>Document</title>
+</head>
+
+<body class="bg-shade font-eng text-text min-h-screen">
+    <header class="bg-white sticky top-0 z-50">
+        <div class="w-full mx-auto md:mx-auto flex justify-center lg:justify-between flex-row items-center lg:px-24">
+            <a href="/index.html"
+                class="text-primary font-eng text-2xl title-font font-bold items-center mb-4 md:mb-0 hidden lg:block">
+                GAAC.ONE
+            </a>
+            <nav class="md:mx-auto flex flex-row text-base justify-between w-full lg:w-[40%]">
+                <a class="w-full flex justify-center text-primary text-center px-3 md:px-10 lg:px-10 py-3 lg:py-5 hover:bg-shade text-2xl lg:text-3xl border-b-4 border-b-primary"
+                    href="/index.html"><i class="fa-solid fa-house"></i></a>
+                <a class="w-full flex justify-center text-primary text-center px-3 md:px-10 lg:px-10 py-3 lg:py-5 hover:bg-shade text-2xl lg:text-3xl"
+                    href="/homepage/mission.html"><i class="fa-solid fa-house"></i></a>
+                <a class="w-full flex justify-center text-primary text-center px-3 md:px-10 lg:px-10 py-3 lg:py-5 hover:bg-shade text-2xl lg:text-3xl"
+                    href="/message/worker_message.html"><i class="fa-solid fa-house"></i></a>
+                <a class="w-full flex justify-center text-primary text-center px-3 md:px-10 lg:px-10 py-3 lg:py-5 hover:bg-shade text-2xl lg:text-3xl"
+                    href="/plan/plan.html"><i class="fa-solid fa-house"></i></a>
+                <a class="w-full flex justify-center text-primary text-center px-3 md:px-10 lg:px-10 py-3 lg:py-5 hover:bg-shade text-2xl lg:text-3xl"
+                    href="/settings/id.html"><i class="fa-solid fa-house"></i></a>
+                <a class="lg:hidden w-full flex justify-center float-left text-primary text-center px-3 md:px-10 lg:px-10 py-3 lg:py-5 hover:bg-shade text-2xl lg:text-3xl"
+                    href="/wallet/wallet.html"><i class="fa-solid fa-house"></i></a>
+            </nav>
+
+            <div>
+                <div class="lg:inline-block lg:relative hidden z-50">
+                    <a href="/wallet/wallet.html"
+                        class="bg-primary text-white hover:bg-white border-2 border-primary hover:border-2 hover:border-primary hover:text-primary px-5 lg:px-10 pb-1 pt-2 lg:text-xl font-bangla rounded-full">
+                        <span class="mr-1">ওয়ালেট</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class=" sticky top-[80px] z-50 py-5 border-b-4 border-white bg-shade">
+        <div
+            class="w-full mx-auto lg:grid grid-cols-3  md:mx-auto  justify-center lg:justify-between flex-row items-center lg:px-24">
+            <a href="/index.html"
+                class="text-primary col-span-2 font-eng text-2xl title-font font-bold items-center mb-4 md:mb-0 hidden lg:block">
+                রিজাইন সম্পর্কে জানুন
+            </a>
+
+            <div class="buttons-group flex sm:justify-around md:justify-around text-right lg:justify-end ">
+
+                <button
+                    class="bg-white border-primary  lg:ml-5  text-primary hover:bg-primary border-2 hover:border-2 hover:border-white hover:text-white w-[120px]  pt-2 lg:text-xl font-bangla rounded-full transition ">
+                    চলমান
+                </button>
+                <button
+                    class="bg-primary lg:ml-5 text-white hover:bg-white border-2 border-primary hover:border-2 hover:border-primary hover:text-primary w-[120px]  pt-2 lg:text-xl font-bangla rounded-full transition ">
+                    রিজাইন
+                </button>
+
+            </div>
+
+
+
+        </div>
+    </nav>
+    <!-- main section start -->
+    <main class=" max-w-[800px] mx-auto lg:px-24 ">
+        <div class="mt-10">
+            <div tabindex="0" class=" mx-auto collapse collapse-arrow border border-primary bg-primary ">
+                <div class="collapse-title text-xl font-medium text-white bg-primary ">
+                    <h2 class="text-center">সেকশনের নাম</h2>
+                </div>
+                <div class="collapse-content bg-shade text-primary">
+
+                    <div class="resign flex  bg-white py-2">
+
+                        <i class="fa-solid fa-user text-5xl mr-4"></i>
+
+                        
+                            <div class="content w-full flex  justify-between items-center">
+                                <div class="text-text ">
+                                    <h2>নাম</h2>
+                                    <h2>সেকশন/পদবি</h2>
+                                </div>
+
+                                <p class="text-primary text-right block ">রিজাইন দিন</p>
+
+                            </div>
+                       
+                    </div>
+                    <div class="resign flex mt-10 bg-white py-2">
+
+                        <i class="fa-solid fa-user text-5xl mr-4"></i>
+
+                        
+                            <div class="content w-full flex  justify-between items-center">
+                                <div class="text-text ">
+                                    <h2>নাম</h2>
+                                    <h2>সেকশন/পদবি</h2>
+                                </div>
+
+                                <p class="text-primary text-right block">রিজাইন দিন</p>
+
+                            </div>
+                       
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+    </main>
+
+
+</body>
+
+</html>
