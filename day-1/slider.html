@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- tailwind css cdn  -->
 
@@ -12,13 +12,13 @@
 
     <!-- daisy ui -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@500&display=swap" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
     <script src="https://kit.fontawesome.com/2cdefe7f54.js" crossorigin="anonymous"></script>
-<!-- swiperjs -->
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
+    <!-- swiperjs -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
     <!-- tailwind css configarations -->
 
@@ -27,169 +27,158 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#1479ff',
-                        shade: '#E7F1FF',
-                        shade_deep: '#C4DDFF',
-                        text: '#0B2445'
+                        primary: "#1479ff",
+                        shade: "#E7F1FF",
+                        shade_deep: "#C4DDFF",
+                        text: "#0B2445",
                     },
                     fontFamily: {
-                        'eng': ['Poppins', 'sans-serif'],
-                        'bangla': ['Noto Sans Bengali', 'sans-serif']
+                        eng: ["Inter", " sans-serif"],
+                        bangla: ["Noto Sans Bengali", "sans-serif"],
                     },
-
-                }
-            }
-        }
+                },
+            },
+        };
     </script>
 
     <!-- for custom css -->
 
-    <!-- <style type="text/tailwindcss">
-    @layer utilities {
-      .content-auto {
-        content-visibility: auto;
-      }
-    }
-  </style> -->
+    <style>
+        .swiper-slide {
+    display: block;
+    width: 100% !important;
+    height: 100%;
+    object-fit: cover;
+}
 
+   
+  </style>
 
     <!-- title -->
     <title>Document</title>
 </head>
 
 <body class="bg-shade font-eng text-text">
-
     <header class="bg-white sticky top-0 z-50">
         <div class="w-full mx-auto md:mx-auto flex justify-center lg:justify-between flex-row items-center lg:px-24">
             <a href="/index.html"
-                class=" text-primary font-eng text-2xl title-font font-bold items-center mb-4 md:mb-0 hidden lg:block">
+                class="text-primary font-eng text-2xl title-font font-bold items-center mb-4 md:mb-0 hidden lg:block">
                 GAAC.ONE
             </a>
             <nav class="md:mx-auto flex flex-row text-base justify-between w-full lg:w-[40%]">
-                <a class=" w-full flex justify-center text-primary text-center px-3 md:px-10 lg:px-10 py-3 lg:py-5 hover:bg-shade text-2xl lg:text-3xl border-b-4 border-b-primary"
+                <a class="w-full flex justify-center text-primary text-center px-3 md:px-10 lg:px-10 py-3 lg:py-5 hover:bg-shade text-2xl lg:text-3xl border-b-4 border-b-primary"
                     href="/index.html"><i class="fa-solid fa-house"></i></a>
-                <a class=" w-full flex justify-center text-primary text-center px-3 md:px-10 lg:px-10 py-3 lg:py-5 hover:bg-shade text-2xl lg:text-3xl "
+                <a class="w-full flex justify-center text-primary text-center px-3 md:px-10 lg:px-10 py-3 lg:py-5 hover:bg-shade text-2xl lg:text-3xl"
                     href="/homepage/mission.html"><i class="fa-solid fa-house"></i></a>
-                <a class=" w-full flex justify-center text-primary text-center px-3 md:px-10 lg:px-10 py-3 lg:py-5 hover:bg-shade text-2xl lg:text-3xl "
+                <a class="w-full flex justify-center text-primary text-center px-3 md:px-10 lg:px-10 py-3 lg:py-5 hover:bg-shade text-2xl lg:text-3xl"
                     href="/message/worker_message.html"><i class="fa-solid fa-house"></i></a>
-                <a class=" w-full flex justify-center text-primary text-center px-3 md:px-10 lg:px-10 py-3 lg:py-5 hover:bg-shade text-2xl lg:text-3xl "
+                <a class="w-full flex justify-center text-primary text-center px-3 md:px-10 lg:px-10 py-3 lg:py-5 hover:bg-shade text-2xl lg:text-3xl"
                     href="/plan/plan.html"><i class="fa-solid fa-house"></i></a>
-                <a class=" w-full flex justify-center text-primary text-center px-3 md:px-10 lg:px-10 py-3 lg:py-5 hover:bg-shade text-2xl lg:text-3xl "
+                <a class="w-full flex justify-center text-primary text-center px-3 md:px-10 lg:px-10 py-3 lg:py-5 hover:bg-shade text-2xl lg:text-3xl"
                     href="/settings/id.html"><i class="fa-solid fa-house"></i></a>
-                <a class=" lg:hidden w-full flex justify-center  float-left text-primary text-center px-3 md:px-10 lg:px-10 py-3 lg:py-5 hover:bg-shade text-2xl lg:text-3xl"
+                <a class="lg:hidden w-full flex justify-center float-left text-primary text-center px-3 md:px-10 lg:px-10 py-3 lg:py-5 hover:bg-shade text-2xl lg:text-3xl"
                     href="/wallet/wallet.html"><i class="fa-solid fa-house"></i></a>
             </nav>
 
             <div>
-
                 <div class="lg:inline-block lg:relative hidden z-50">
                     <a href="/wallet/wallet.html"
-                        class="bg-primary text-white hover:bg-white border-2 border-primary hover:border-2 hover:border-primary hover:text-primary px-5 lg:px-10 pb-1 pt-2  lg:text-xl font-bangla rounded-full">
+                        class="bg-primary text-white hover:bg-white border-2 border-primary hover:border-2 hover:border-primary hover:text-primary px-5 lg:px-10 pb-1 pt-2 lg:text-xl font-bangla rounded-full">
                         <span class="mr-1">ওয়ালেট</span>
                     </a>
                 </div>
-
             </div>
-
         </div>
     </header>
 
-
     <!-- main section start -->
     <main>
+        <div class="cardLayout   my-10">
 
-     <div class="cardLayout container overflow-hidden max-w-3 mx-auto py-5 flex mySwiper  my-10 ">
-        <div class="swiper-wrapper">
-            <div class="card shadow-xl swiper-slide bg-white ">
-                <img class="w-[80%]  mx-auto my-2"  src="https://img.freepik.com/free-photo/giant-building-with-sun_1127-400.jpg" alt="slider-img">
-    
-                <div class="content my-3 ">
-                    <h3 class="mt-5 text-center font-bold sm:2xl md:text-2xl lg:text-[24px]">Construction Buildring</h3>
-                    <h4 class="text-2xl font-bold  mt-3 text-center">example exsories LTD</h4>
-    
-                    <h4 class="font-bangla text-center mt-3 text-xl font-medium"> ঠিকানা:  আরামবাগ মোড় ঢাকা
-                    </h4>
-                    <div class="btn flex items-center mt-3">
-                        <button class="bg-primary text-white hover:bg-white border-2 border-primary hover:border-2 hover:border-primary hover:text-primary px-5 lg:px-10 pb-1 pt-2  lg:text-xl font-bangla  rounded transition  mx-auto">জয়েন</button>
+            <div
+                class="card shadow-xl xs:w-[90%] sm:w-[90%] md:w-[566px] lg:w-[566px] overflow-hidden  mx-auto py-5 flex  bg-white">
+                <div>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <!-- slide 1 -->
+                            <div class="swiper-slide">
+                                <img class=" h-[300px] mx-auto my-2 w-auto" style="width: auto;"
+                                src="https://images.pexels.com/photos/339567/pexels-photo-339567.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="slider-img" />
+                            </div>
+                            <!-- slide 2 -->
+                            <div class="swiper-slide">
+                                <img class=" h-[300px] mx-auto my-2 w-auto" style="width: auto;"
+                                src="https://img.freepik.com/free-photo/giant-building-with-sun_1127-400.jpg"
+                                alt="slider-img" />
+                            </div>
+
+                            
+                        </div>
+                        <div class="swiper-button-prev w-2"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-pagination"></div>
+                      
+                        
+                    </div>
+                   
+
+
+                    <div class="content mb-3">
+                        
+                        <h3 class="mt-5 text-center font-bold sm:2xl md:text-2xl lg:text-[24px]">
+                            1234
+                        </h3>
+                        <h4 class="text-2xl font-bold text-center">
+                            example exsories LTD
+                        </h4>
+
+                        <h4 class="font-bangla text-center mt-1 text-xl font-medium">
+                            ঠিকানা: আরামবাগ মোড় ঢাকা
+                        </h4>
+                        <div class="btn flex items-center mt-3">
+                            <button
+                                class="bg-primary text-white hover:bg-white border-2 border-primary hover:border-2 hover:border-     primary hover:text-primary px-5 lg:px-10 pb-1 pt-2 lg:text-xl font-bangla rounded transition mx-auto">
+                                জয়েন
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="card shadow-xl swiper-slide bg-white w-[480px]">
-                <img class="w-[80%]  mx-auto my-2"  src="https://img.freepik.com/free-photo/giant-building-with-sun_1127-400.jpg" alt="slider-img">
-    
-                <div class="content my-3 ">
-                    <h3 class="mt-5 text-center font-bold sm:2xl md:text-2xl lg:text-[24px]">Construction Buildring</h3>
-                    <h4 class="text-2xl font-bold  mt-3 text-center">example exsories LTD</h4>
-    
-                    <h4 class="font-bangla text-center mt-3 text-xl font-medium"> ঠিকানা:  আরামবাগ মোড় ঢাকা
-                    </h4>
-                    <div class="btn flex items-center mt-3">
-                        <button class="bg-primary text-white hover:bg-white border-2 border-primary hover:border-2 hover:border-primary hover:text-primary px-5 lg:px-10 pb-1 pt-2  lg:text-xl font-bangla  rounded transition  mx-auto">জয়েন</button>
-                    </div>
-                </div>
-            </div>
-            <div class="card shadow-xl swiper-slide bg-white w-[480px]">
-                <img class="w-[80%]  mx-auto my-2"  src="https://img.freepik.com/free-photo/giant-building-with-sun_1127-400.jpg" alt="slider-img">
-    
-                <div class="content my-3 ">
-                    <h3 class="mt-5 text-center font-bold sm:2xl md:text-2xl lg:text-[24px]">Construction Buildring</h3>
-                    <h4 class="text-2xl font-bold  mt-3 text-center">example exsories LTD</h4>
-    
-                    <h4 class="font-bangla text-center mt-3 text-xl font-medium"> ঠিকানা:  আরামবাগ মোড় ঢাকা
-                    </h4>
-                    <div class="btn flex items-center mt-3">
-                        <button class="bg-primary text-white hover:bg-white border-2 border-primary hover:border-2 hover:border-primary hover:text-primary px-5 lg:px-10 pb-1 pt-2  lg:text-xl font-bangla  rounded transition  mx-auto">জয়েন</button>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-button-next bg-primary"></div>
-            <div class="swiper-button-prev bg-primary"></div>
-            <div class="swiper-pagination  bg-primary"></div>
+
+
+
+
 
         </div>
-
-     
-
-     </div>
-
     </main>
 
-<!-- javaScript section -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- javaScript section -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-<script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      slidesPerGroup: 1,
-      loop: true,
-      centerSlide: true,
-      fade:true,
-      grabCursor:true,
-    dynamicBullet:true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      breakpoints: {
-        0: {
-          slidesPerView: 1,
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            slidesPerGroup: 1,
+            loop: true,
+            centerSlide: true,
+            fade: true,
+            grabCursor: true,
+
+        loopFillGroupWithBlank: true,
+
+            pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
         },
-       600: {
-            slidesPerView: 2,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
-       900: {
-            slidesPerView: 3,
-        }
-      }
-    });
-  </script>
 
-
+        });
+    </script>
 </body>
 
 </html>
