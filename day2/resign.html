@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- tailwind css cdn  -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- daisy ui -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@500&display=swap" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <script src="https://kit.fontawesome.com/2cdefe7f54.js" crossorigin="anonymous"></script>
+
+
+    <!-- tailwind css configarations -->
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#1479ff",
+                        shade: "#E7F1FF",
+                        shade_deep: "#C4DDFF",
+                        text: "#0B2445",
+                        danger: '#FF0055'
+                    },
+                    fontFamily: {
+                        eng: ["Inter", " sans-serif"],
+                        bangla: ["Noto Sans Bengali", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+
+    <!-- for custom css -->
+
+
+
+    <!-- title -->
+    <title>Document</title>
+</head>
+
+<body class="bg-shade font-eng text-text">
+    <header class="bg-white sticky top-0 z-50">
+        <div class="w-full mx-auto md:mx-auto flex justify-center lg:justify-between flex-row items-center lg:px-24">
+            <a href="/index.html"
+                class="text-primary font-eng text-2xl title-font font-bold items-center mb-4 md:mb-0 hidden lg:block">
+                GAAC.ONE
+            </a>
+            <nav class="md:mx-auto flex flex-row text-base justify-between w-full lg:w-[40%]">
+                <a class="w-full flex justify-center text-primary text-center px-3 md:px-10 lg:px-10 py-3 lg:py-5 hover:bg-shade text-2xl lg:text-3xl border-b-4 border-b-primary"
+                    href="/index.html"><i class="fa-solid fa-house"></i></a>
+                <a class="w-full flex justify-center text-primary text-center px-3 md:px-10 lg:px-10 py-3 lg:py-5 hover:bg-shade text-2xl lg:text-3xl"
+                    href="/homepage/mission.html"><i class="fa-solid fa-house"></i></a>
+                <a class="w-full flex justify-center text-primary text-center px-3 md:px-10 lg:px-10 py-3 lg:py-5 hover:bg-shade text-2xl lg:text-3xl"
+                    href="/message/worker_message.html"><i class="fa-solid fa-house"></i></a>
+                <a class="w-full flex justify-center text-primary text-center px-3 md:px-10 lg:px-10 py-3 lg:py-5 hover:bg-shade text-2xl lg:text-3xl"
+                    href="/plan/plan.html"><i class="fa-solid fa-house"></i></a>
+                <a class="w-full flex justify-center text-primary text-center px-3 md:px-10 lg:px-10 py-3 lg:py-5 hover:bg-shade text-2xl lg:text-3xl"
+                    href="/settings/id.html"><i class="fa-solid fa-house"></i></a>
+                <a class="lg:hidden w-full flex justify-center float-left text-primary text-center px-3 md:px-10 lg:px-10 py-3 lg:py-5 hover:bg-shade text-2xl lg:text-3xl"
+                    href="/wallet/wallet.html"><i class="fa-solid fa-house"></i></a>
+            </nav>
+
+            <div>
+                <div class="lg:inline-block lg:relative hidden z-50">
+                    <a href="/wallet/wallet.html"
+                        class="bg-primary text-white hover:bg-white border-2 border-primary hover:border-2 hover:border-primary hover:text-primary px-5 lg:px-10 pb-1 pt-2 lg:text-xl font-bangla rounded-full">
+                        <span class="mr-1">ওয়ালেট</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class=" sticky top-[80px] z-50 py-5 border-b-4 border-white bg-shade">
+<h2 class="text-center text-2xl">রিজাইন সম্পর্কে <a href="#" class="text-primary">বিস্তারিত জানুন</a> </h2>
+    </nav>
+    <!-- main section start -->
+    <main>
+
+       
+
+               
+        <div class="cardLayout   my-10 ">
+
+        
+            <form class="notice max-w-[600px] sm:w-[90%] mx-auto my-5 ">
+
+                <div class="px-16 lg:px-48 py-2 lg:py-6 w-full mx-auto ">
+                    <div class="relative">
+                      <select name="cars" id="cars" class="w-full h-11 bg-white rounded border focus:border-shade_deep focus:bg-white focus:ring-1 text-base outline-none text-primary py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        <option class="bg-shade_deep hover:bg-primary" value="volvo">রিজাইন সময়</option>
+                        <option class="bg-shade_deep hover:bg-primary" value="volvo">৩০ দিনের জন্য</option>
+                        <option class="bg-shade_deep hover:bg-primary" value="saab">১৫ দিনের জন্য </option>
+                        <option class="bg-shade_deep hover:bg-primary" value="saab">জরুরী রিজাইন</option>
+                      </select>
+                    </div>
+                  </div>
+
+
+                <textarea class="w-full h-[300px] py-2 mt-3 bg-white resize-none" name="" id=""></textarea>
+
+                <div class="flex btn-group my-6">
+
+
+                    <button
+                        class="bg-primary text-white hover:bg-white border-2 border-primary hover:border-2 hover:border-primary hover:text-primary block w-[120px]  pb-1 pt-2 lg:text-xl font-bangla rounded-full transition mx-auto">
+                        সাবমিট
+                    </button>
+
+
+
+
+
+                </div>
+
+            </form>
+
+
+
+
+        </div>
+    </main>
+
+
+</body>
+
+</html>
