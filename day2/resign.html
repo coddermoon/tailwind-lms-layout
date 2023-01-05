@@ -42,7 +42,9 @@
     </script>
 
     <!-- for custom css -->
+<style>
 
+</style>
 
 
     <!-- title -->
@@ -81,8 +83,8 @@
             </div>
         </div>
     </header>
-    <nav class=" sticky top-[80px] z-50 py-5 border-b-4 border-white bg-shade">
-<h2 class="text-center text-2xl">রিজাইন সম্পর্কে <a href="#" class="text-primary">বিস্তারিত জানুন</a> </h2>
+    <nav class=" sticky top-[60px] lg:top-[80px] z-50 py-5 border-b-4 border-white bg-shade">
+<h2 class="text-center text-xl">রিজাইন সম্পর্কে <a href="#" class="text-primary">বিস্তারিত জানুন</a> </h2>
     </nav>
     <!-- main section start -->
     <main>
@@ -95,32 +97,34 @@
         
             <form class="notice max-w-[600px] sm:w-[90%] mx-auto my-5 ">
 
-                <div class="px-16 lg:px-48 py-2 lg:py-6 w-full mx-auto ">
-                    <div class="relative">
-                      <select name="cars" id="cars" class="w-full h-11 bg-white rounded border focus:border-shade_deep focus:bg-white focus:ring-1 text-base outline-none text-primary py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                        <option class="bg-shade_deep hover:bg-primary" value="volvo">রিজাইন সময়</option>
-                        <option class="bg-shade_deep hover:bg-primary" value="volvo">৩০ দিনের জন্য</option>
-                        <option class="bg-shade_deep hover:bg-primary" value="saab">১৫ দিনের জন্য </option>
-                        <option class="bg-shade_deep hover:bg-primary" value="saab">জরুরী রিজাইন</option>
-                      </select>
+                <div class="mx-4 lg:mx-0">
+                    <div class="px-16 lg:px-48 py-2 lg:py-6 w-full mx-auto ">
+                        <div class="relative">
+                          <select name="cars" id="cars" class="w-full h-11 bg-white rounded border focus:border-shade_deep focus:bg-white focus:ring-1  outline-none text-primary py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                            <option class="bg-shade_deep hover:bg-primary " value="volvo">রিজাইন সময়</option>
+                            <option class="bg-shade_deep hover:bg-primary" value="volvo">৩০ দিনের জন্য</option>
+                            <option class="bg-shade_deep hover:bg-primary" value="saab">১৫ দিনের জন্য </option>
+                            <option class="bg-shade_deep hover:bg-primary" value="saab">জরুরী রিজাইন</option>
+                          </select>
+                        </div>
+                      </div>
+    
+    
+                    <textarea class="w-full h-[300px] placeholder:text-center placeholder:text-2xl placeholder:pt-6 py-2 mt-3 bg-white resize-none" name="" id="" placeholder="রিজাইনের কারণ"></textarea>
+    
+                    <div class="flex btn-group my-6">
+    
+    
+                        <button
+                            class="bg-primary text-white hover:bg-white border-2 border-primary hover:border-2 hover:border-primary hover:text-primary block w-[120px]  pb-1 pt-2 lg:text-xl font-bangla rounded-full transition mx-auto">
+                            সাবমিট
+                        </button>
+    
+    
+    
+    
+    
                     </div>
-                  </div>
-
-
-                <textarea class="w-full h-[300px] placeholder:text-center placeholder:text-2xl placeholder:pt-6 py-2 mt-3 bg-white resize-none" name="" id="" placeholder="রিজাইনের কারণ"></textarea>
-
-                <div class="flex btn-group my-6">
-
-
-                    <button
-                        class="bg-primary text-white hover:bg-white border-2 border-primary hover:border-2 hover:border-primary hover:text-primary block w-[120px]  pb-1 pt-2 lg:text-xl font-bangla rounded-full transition mx-auto">
-                        সাবমিট
-                    </button>
-
-
-
-
-
                 </div>
 
             </form>

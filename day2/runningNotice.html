@@ -41,7 +41,16 @@
     </script>
 
     <!-- for custom css -->
-
+<style>
+    .runningDiv:hover .time{
+background: #1479ff;
+color: #fff;
+    }
+    .runningDiv:hover .sub{
+        background: #1479ff;
+color: #fff;
+    }
+</style>
 
 
     <!-- title -->
@@ -81,7 +90,7 @@
         </div>
     </header>
 
-    <nav class=" sticky top-[72px] z-50 py-5 border-b-4 border-white bg-shade">
+    <nav class=" sticky top-[50px] lg:top-[70px] z-50 py-5 border-b-4 border-white bg-shade">
         <div class="w-full mx-auto   flex justify-between   lg:px-24">
 
             <a href="/index.html"
@@ -121,99 +130,105 @@
 
             <!-- running -->
 
-            <div class="runningNoticeSection   py-10 border-r-4 lg:-order-last sm:order-last md:order-last  md:border-white ">
+            <div
+                class="runningNoticeSection border-shade   py-10 lg:border-r-4   lg:border-white mx-4">
 
                 <div class="running mr-4">
                     <h3 class="text-lg lg:text-2xl md:xl font-bold">চলমান নোটিশ </h3>
-                    <div class="flex  py-1 pr-3 border-primary my-2">
 
-                        <p class="w-[180px] md:xl bg-primary py-1 text-lg lg:text-2xl md:xl px-2 border-white text-white border-r-2">০০-০০-০০</p>
-                        <h2 class="bg-primary md:xl text-lg lg:text-2xl md:xl py-1  text-white w-full px-3">বিষয় </h2>
+                    <div class="flex  py-1 pr-3 my-2 runningDiv transition">
+
+                        <p class="w-[180px] time bg-white text-primary py-1 border-deep_shade text-2xl px-2  border-r-2">
+                            ০০-০০-০০</p>
+                        <h2 class="bg-white py-1 sub text-lg lg:text-2xl md:xl  border-white text-primary w-full px-3">বিষয়
+                        </h2>
+
+
+
 
                     </div>
-                    <div class="flex  py-1 pr-3 my-2">
+                    <div class="flex  py-1 pr-3 my-2 runningDiv transition">
 
-                        <p class="w-[180px] bg-white text-primary py-1 border-deep_shade text-2xl px-2  border-r-2">০০-০০-০০</p>
-                        <h2 class="bg-white py-1 text-lg lg:text-2xl md:xl  border-white text-primary w-full px-3">বিষয় </h2>
-    
-    
-    
-    
+                        <p class="w-[180px] time bg-white text-primary py-1 border-deep_shade text-2xl px-2  border-r-2">
+                            ০০-০০-০০</p>
+                        <h2 class="bg-white py-1 sub text-lg lg:text-2xl md:xl  border-white text-primary w-full px-3">বিষয়
+                        </h2>
+
+
+
+
                     </div>
 
 
                 </div>
-<!-- sedule totice -->
+                <div class="running mr-4 mt-5">
+                    <h3 class="text-lg lg:text-2xl md:xl font-bold">চলমান নোটিশ </h3>
 
+                    <div class="flex  py-1 pr-3 my-2 runningDiv transition">
 
-<div class="running mr-4">
-    <h3 class="text-lg lg:text-2xl md:xl font-bold">চলমান নোটিশ </h3>
-    <div class="flex  py-1 pr-3 border-primary my-2">
-
-        <p class="w-[180px] md:xl bg-primary py-1 text-lg lg:text-2xl md:xl px-2 border-white text-white border-r-2">০০-০০-০০</p>
-        <h2 class="bg-primary md:xl text-lg lg:text-2xl md:xl py-1  text-white w-full px-3">বিষয় </h2>
-
-    </div>
-    <div class="flex  py-1 pr-3 my-2">
-
-        <p class="w-[180px] bg-white text-primary py-1 border-deep_shade text-2xl px-2  border-r-2">০০-০০-০০</p>
-        <h2 class="bg-white py-1 text-lg lg:text-2xl md:xl  border-white text-primary w-full px-3">বিষয় </h2>
+                        <p class="w-[180px] time bg-white text-primary py-1 border-deep_shade text-2xl px-2  border-r-2">
+                            ০০-০০-০০</p>
+                        <h2 class="bg-white py-1 sub text-lg lg:text-2xl md:xl  border-white text-primary w-full px-3">বিষয়
+                        </h2>
 
 
 
 
-    </div>
+                    </div>
+                    <div class="flex  py-1 pr-3 my-2 runningDiv transition">
 
-
-</div>
-<div class="running mr-4">
-    <h3 class="text-lg lg:text-2xl md:xl font-bold">চলমান নোটিশ </h3>
-    <div class="flex  py-1 pr-3 border-primary my-2">
-
-        <p class="w-[180px] md:xl bg-primary py-1 text-lg lg:text-2xl md:xl px-2 border-white text-white border-r-2">০০-০০-০০</p>
-        <h2 class="bg-primary md:xl text-lg lg:text-2xl md:xl py-1  text-white w-full px-3">বিষয় </h2>
-
-    </div>
-    <div class="flex  py-1 pr-3 my-2">
-
-        <p class="w-[180px] bg-white text-primary py-1 border-deep_shade text-2xl px-2  border-r-2">০০-০০-০০</p>
-        <h2 class="bg-white py-1 text-lg lg:text-2xl md:xl  border-white text-primary w-full px-3">বিষয় </h2>
+                        <p class="w-[180px] time bg-white text-primary py-1 border-deep_shade text-2xl px-2  border-r-2">
+                            ০০-০০-০০</p>
+                        <h2 class="bg-white py-1 sub text-lg lg:text-2xl md:xl  border-white text-primary w-full px-3">বিষয়
+                        </h2>
 
 
 
 
-    </div>
+                    </div>
 
 
-</div>
+                </div>
 
-<div class="running mr-4">
-    <h3 class="text-lg lg:text-2xl md:xl font-bold">চলমান নোটিশ </h3>
-    <div class="flex  py-1 pr-3 border-primary my-2">
+                
+                <div class="running mr-4 mt-5">
+                    <h3 class="text-lg lg:text-2xl md:xl font-bold">চলমান নোটিশ </h3>
 
-        <p class="w-[180px] md:xl bg-primary py-1 text-lg lg:text-2xl md:xl px-2 border-white text-white border-r-2">০০-০০-০০</p>
-        <h2 class="bg-primary md:xl text-lg lg:text-2xl md:xl py-1  text-white w-full px-3">বিষয় </h2>
+                    <div class="flex  py-1 pr-3 my-2 runningDiv transition">
 
-    </div>
-    <div class="flex  py-1 pr-3 my-2">
-
-        <p class="w-[180px] bg-white text-primary py-1 border-deep_shade text-2xl px-2  border-r-2">০০-০০-০০</p>
-        <h2 class="bg-white py-1 text-lg lg:text-2xl md:xl  border-white text-primary w-full px-3">বিষয় </h2>
+                        <p class="w-[180px] time bg-white text-primary py-1 border-deep_shade text-2xl px-2  border-r-2">
+                            ০০-০০-০০</p>
+                        <h2 class="bg-white py-1 sub text-lg lg:text-2xl md:xl  border-white text-primary w-full px-3">বিষয়
+                        </h2>
 
 
 
 
-    </div>
+                    </div>
+                    <div class="flex  py-1 pr-3 my-2 runningDiv transition">
+
+                        <p class="w-[180px] time bg-white text-primary py-1 border-deep_shade text-2xl px-2  border-r-2">
+                            ০০-০০-০০</p>
+                        <h2 class="bg-white py-1 sub text-lg lg:text-2xl md:xl  border-white text-primary w-full px-3">বিষয়
+                        </h2>
 
 
-</div>
+
+
+                    </div>
+
+
+                </div>
+                <!-- sedule totice -->
+
+
 
 
             </div>
 
 
 
-            <div class="cardLayout my-10">
+            <div class="cardLayout my-10 hidden lg:block ">
 
                 <h2 class="text-center text-2xl font-bold ">বিষয়</h2>
                 <form class="notice max-w-[600px] xs:w-[80%] sm:w-[80%] mx-auto my-5 ">
